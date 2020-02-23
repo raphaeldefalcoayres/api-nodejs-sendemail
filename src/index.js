@@ -22,8 +22,8 @@ router.post('/send', (req, res, next) => {
   const content = `<b>Nome: </b>${name} <br /><b>E-mail: </b>${email} <br /><b>Mensagem: </b>${message} `;
 
   const mailOptions = {
-    from: '"everton" <everton@spedreal.com.br>',
-    to: 'raphaeldefalcoayres@gmail.com',
+    from: mailConfig.default.from,
+    to: mailConfig.default.to,
     subject: 'Contato via Site',
     html: content,
   };

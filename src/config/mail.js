@@ -9,5 +9,6 @@ module.exports = {
   secure: false,
   default: {
     from: process.env.MAIL_FROM,
+    to: process.env.MAIL_TO,
   },
 };
